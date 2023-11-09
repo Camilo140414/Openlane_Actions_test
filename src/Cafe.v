@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
- module Cafe(
+ module src(
     input S2,
     input S1,
     input S0,
@@ -72,7 +72,7 @@ always @(presente)
                 end  
     
            endcase 
-//FSM (Lógica del estado siguiente)
+//FSM (LÃ³gica del estado siguiente)
     always @(posedge clk)
         presente <= futuro;
         
